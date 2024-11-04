@@ -5,25 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    
     <title>Frontend Mentor | Recipe page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+
+
       body {
         width: 100%;
-
+        font-family: "Outfit", sans-serif;
         background-color: #f3e5d8;
+        color: rgb(84 79 73);
+      }
+
+      hr {
+        opacity: 50%;
       }
       .box-red {
         border: red solid 2px;
       }
+
+      .header {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+      }
+
+    
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -64,6 +83,8 @@
 
       .topic {
         color: #794239;
+        font-family: "Young Serif", serif;
+        font-weight: 400;
       }
       .list {
         margin-bottom: 30px;
@@ -82,17 +103,24 @@
       .num li {
         padding-left: 15px;
         margin-bottom: 5px;
+        
+      }
+      .num li::marker {
+        color: #794239;
+        font-weight: bold;
       }
 
       .half {
         width: 50%;
+        padding: 5px;
+        margin-left: 25px;
       }
 
       .half2 {
         width: 50%;
         color: #794239;
         font-weight: bold;
-
+        padding: 5px;
       }
     </style>
   </head>
@@ -100,7 +128,7 @@
     <div class="big-box">
       <img class="box-img" src="./assets/images/image-omelette.jpeg" alt="" />
 
-      <h1>Simple Omelette Recipe</h1>
+      <h1 class="header">Simple Omelette Recipe</h1>
 
       <p>
         An easy and quick dish, perfect for any meal. This classic omelette
